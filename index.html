@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sensational Cities</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <div data-role="page" id="index">
-        <div data-role="navbar">
-            <ul>
-                <li class="ui-btn-active ui-state-persist"><a href="#index">Home</a></li>
-                <li><a href="#construction">Africa</a></li>
-                <li><a href="#construction">America</a></li>
-                <li><a href="#asia">Asia</a></li>
-                <li><a href="#construction">Europe</a></li>
-            </ul>
-        </div>
         <div data-role="header">
-            <div class="ui-grid-a">
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#index" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+                    <li><a href="#construction" data-icon="arrow-r">Africa</a></li>
+                    <li><a href="#construction" data-icon="arrow-r">America</a></li>
+                    <li><a href="#asia" data-icon="arrow-r">Asia</a></li>
+                    <li><a href="#construction" data-icon="search">Search</a></li>
+                </ul>
+            </div>
+            <div class="ui-grid-a ui-responsive">
                 <div class="ui-block-a">
-                    <h1>Sensational Cities</h1>
+                    <h1>Sensational</h1>
+					<h1>Cities</h1>
                     <br>
-                    <br>
-                    <p>We are all great explorers during our first few days in a new city</p>
-                    <p>- Mignon McLaughlin</p>
+					<div class="headerQuote">
+						<h3>We are all great explorers during our first few days in a new city</h3>
+						<h3>- Mignon McLaughlin</h3>
+					</div>
                 </div>
                 <div class="ui-block-b">
                     <img src="img/citySkyline.jpg" alt="" width="600" height="420">
                 </div>
             </div>
         </div>
+    <!-- data-role: nain or content? -->
         <div data-role="content" class="ui-content">
-            <div class="ui-grid-a">
+            <div class="ui-grid-a ui-responsive">
                 <div class="ui-block-a">
                     <article>
                         <h2>Our mission</h2>
@@ -52,11 +56,11 @@
                         <p>To this end we need your help. We would like you to help drive the content of our site. So please take the time to share with us what cities you have been to that you found fascinating. Or what cities would ypu like to find out more about. We will be constantly checking your responses and adding new cities. We look forward to hearing from you. Until then we hope you enjoy your journey.</p>
                     </article>
                 </div>
-                <div class="ui-block-b">
+                <div class="ui-block-b theForm">
+					<h2>Your vote</h2>
                     <form action="post">
                         <fieldset>
-                            <legend>Your vote</legend>
-                            <spanid="spanCity">
+                            <span id="spanCity">
                                 </span>
                                 <div>
                                     <label for="nationality">Nationality:</label>
@@ -76,83 +80,147 @@
                                 </div>
                                 <div id="divCity">
                                     <label for="city">City:</label>
-                                    <input type="text" city " required>
+                                    <input type="text" id="city" required>
                             </div>
                             <div>
-                                <label for="reason ">Reason:</label>
-                                <textarea rows="5 " id="reason "></textarea>
+                                <label for="reason">Reason:</label>
+                                <textarea rows="5" id="reason"></textarea>
                             </div>
                             <div>
                                 <label>More information:</label>
                                 <div>
                                     <label>
-                                        <input type="radio " name="contactInfo " value="yes " id="contactInfo " checked>Yes</label>
+                                        <input type="radio" name="contactInfo" value="yes" id="contactInfo" checked>Yes</label>
                                 </div>
                                 <div>
                                     <label>
-                                        <input type="radio " name="contactInfo " value="no ">No</label>
+                                        <input type="radio" name="contactInfo" value="no">No</label>
                                 </div>
                             </div>
                             <div>
-                                <label for="email ">Email address:</label>
-                                <input type="email " id="email ">
+                                <label for="email">Email address:</label>
+                                <input type="email" id="email">
                             </div>
                             <div>
-                                <label>
-                                    <input type="checkbox ">Send additional promo info</label>
+                                <label><input type="checkbox">Send additional promo info</label>
                             </div>
                             <br>
-                            <button type="submit " class="btn btn-default " id="submitBtn ">Submit</button>
+                            <button type="submit" class="ui-btn ui-btn-inline ui-corner-all ui-shadow" id="submitBtn">Submit</button>
                             <br>
                         </fieldset>
                     </form>
                 </div>
             </div>
         </div>
-        <div data-role="footer ">
-            <h1>Insert Footer Text Here</h1>
+        <div data-role="footer">
+            <h1>Sensational Cities</h1>
         </div>
     </div>
-
-	<! ------------- PAGE: ASIA ------------------------>
-	<div data-role="page " id="asia ">
-	  <div data-role="main " class="ui-content ">
-	    <a href="#index ">Go to Page One</a>
-	  </div>
+<!------ PAGE FOR ASIA ------------->
+	<div data-role="page" id="asia">
+        <div data-role="header">
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#index" data-icon="home">Home</a></li>
+                    <li><a href="#construction" data-icon="arrow-r">Africa</a></li>
+                    <li><a href="#construction" data-icon="arrow-r">America</a></li>
+                    <li><a href="#asia" class="ui-btn-active ui-state-persist" data-icon="arrow-r">Asia</a></li>
+                    <li><a href="#construction" data-icon="search">Search</a></li>
+                </ul>
+            </div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+                    <h1>Sensational</h1>
+					<h1>Cities</h1>
+                    <br>
+					<div class="headerQuote">
+						<h3>We are all great explorers during our first few days in a new city</h3>
+						<h3>- Mignon McLaughlin</h3>
+					</div>
+                </div>
+                <div class="ui-block-b">
+                    <img src="img/citySkyline.jpg" alt="" width="600" height="420">
+                </div>
+            </div>
+        </div>
+		<div data-role="main" class="ui-content ">
+			<div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a">
+					<article>
+						<h2>Kyoto, Japan</h2>
+						<p>Kansai is made up of four major cities. There is the bustling neon jugle of Osaka, Japan's second largest city. Towards the west is the beautiful city of Kobe which is located on a narrow peice of land that is sandwiched by a mountain and the sea. To the east are the two ancient capitals of Nara and Kyoto. Nara was the capital of Japan from 710 to 794. But the jewel in Japan's amazing site-seeing crown is the city of Kyoto. The last time it was the capital of Japan was in 1869.</p>
+						<blockquote>
+							<h3>"Even in Kyoto</h3>
+							<h3>Hearing the cuckoo's cry</h3>
+							<h3>I long for Kyoto"</h3>
+							<p>- Matsuo Basho</p>
+						</blockquote>
+						<p>There are literally thousands of Buddhist temples and Shinto shrines in Kyoto. One of the great joys is to wander along the streets and discover some ancient small temple nestled between a couple of modern buildings. Some of Japan's key sites are ontained with this city, that is itself ringed by mountains.The variety, historical span and sheer number of World Heritage Sites in Kyoto is unrivaled in Japan. Nijo-jo Castle and the sixteen temples and shrines were selected as World Heritage Sites by UNESCO in 1994. Kyoto is a wonderful example of a modern, working Japanese city that is sprinkled with sites that contain it&#39;s ancient past. Please take the time to read more about or visit and explore this wonderful city.</p>
+					</article>
+				</div>
+				<div class="ui-block-b theTable">
+					<h2>Top 3 sites in Kyoto</h2>
+					 <table data-role="table" class="ui-responsive ui-shadow">
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Kinkakuji</th>
+								<td>"Kin" means gold, so it is the golden temple. It is one of the most popular tourist sites in Japan. The temple&#39;s character changes with the season. You can find out more about it here: <a href="https://en.wikipedia.org/wiki/Kinkaku-ji">Link to Wikipedia</a>.</td>
+							</tr>
+							<tr>
+								<th>Kiyomizu</th>
+								<td>It is a Buddhist temple located in Eastern Kyoto. The current structure was built in 1633. The views of Kyoto are breathtaking. You can find out more information about it here: <a href="https://en.wikipedia.org/wiki/Kiyomizu-dera">Link to Wikipedia</a>.</td>
+							</tr>
+							<tr>
+								<th>Nijo</th>
+								<td>This castle was completed in 1626. It is made up of two rings of fortification. The inside of the castle contains beautiful traditional rooms. You can find out more information about it here: <a href="https://en.wikipedia.org/wiki/Nij%C5%8D_Castle">Link to Wikipedia</a>.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer">
+            <h1>Sensational Cities</h1>
+        </div>
 	</div>
 
-	<! ------------- PAGE: CONSTRUCTION ------------------------>
-	<div data-role="page " id="construction ">
-	        <div data-role="navbar ">
-	            <ul>
-	                <li><a href="#index ">Home</a></li>
-	                <li><a href="#construction ">Africa</a></li>
-	                <li><a href="#construction ">America</a></li>
-	                <li><a href="#asia ">Asia</a></li>
-	                <li><a href="#construction ">Europe</a></li>
-	            </ul>
-	        </div>
-	        <div data-role="header ">
-	            <div class="ui-grid-a ">
-	                <div class="ui-block-a ">
-	                    <h1>Sensational Cities</h1>
-	                    <br>
-	                    <br>
-	                    <p>We are all great explorers during our first few days in a new city</p>
-	                    <p>- Mignon McLaughlin</p>
-	                </div>
-	                <div class="ui-block-b ">
-	                    <img src="img/underconstruction.jpg " alt=" " width="600 " height="420 ">
-	                </div>
-	            </div>
-	        </div>
-	                <div data-role="footer ">
-            <h1>Insert Footer Text Here</h1>
+<!----- PAGE FOR UNDER CNSTRUCTION --->
+	<div data-role="page" id="construction">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#index" data-icon="home">Home</a></li>
+                <li><a href="#construction" data-icon="arrow-r">Africa</a></li>
+                <li><a href="#construction" data-icon="arrow-r">America</a></li>
+                <li><a href="#asia" data-icon="arrow-r">Asia</a></li>
+                <li><a href="#construction" data-icon="search">Search</a></li>
+            </ul>
         </div>
-    </div>
+        <div data-role="header">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1>Sensational</h1>
+					<h1>Cities</h1>
+                    <br>
+					<div class="headerQuote">
+						<h3>We are all great explorers during our first few days in a new city</h3>
+						<h3>- Mignon McLaughlin</h3>
+					</div>
+                </div>
+                <div class="ui-block-b">
+                      <img src="img/underconstruction.jpg" alt=" " width="600" height="420">
+                </div>
+            </div>
+         </div>
+	</div>
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js "></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js "></script>
-    <script src="js/script.js "></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
