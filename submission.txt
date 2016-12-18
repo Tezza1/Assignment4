@@ -1,0 +1,17 @@
+    * My week 12-13 jQuery Mobile assignment is located at this/these URL(s):http://terrys.sgedu.site/Assignment4/
+   
+        * Grid system is located on this/these page(s): index.html (& asia.html)
+        * Button and/or icon is located here: index.html (icons: lines 20 -24) (button: 110)
+        * My two widgets are toolbar and button and checkbox  and they are located on these pages: index.html
+        * My custom theme is applied on this page index.html line number 16 
+        * The form is located here: index.html (lines 63 - 120) and the modifications I used are checkbox inline and button inline HTML line numbers 91 - 99 & 117
+        * The jQuery Mobile events I used on my site include: tap and swipe They are located here: index.html and js/script.js
+
+    * My week 14 jQuery UI assignment is located at this/these URL(s): http://terrys.sgedu.site/Assignment4b/
+    
+        * My custom theme is applied on this page index.html line number(s) 37 & 96 
+        * My interaction is draggable  applied on this page index.html line number(s) HTML lines 16-23 and JS line 2 
+        * My widget is slider  applied on this page index.html line number(s) HTML line 35  and JS line 7
+        * My effect is toggle(fade) applied on this page index.html  line number(s) HTML (whole document) and JS lines 13 - 16
+
+
